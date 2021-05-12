@@ -1,5 +1,5 @@
 ## [titel van jullie game]
-Project team:[jullie namen]
+Project team:[Emile Davidson, Jaimy Koster, Sterre Wit, Danielle van Oostveen, Vivian Dijkstra, Larhone Goossens]
 
 Platform:
 [jullie platfom]
