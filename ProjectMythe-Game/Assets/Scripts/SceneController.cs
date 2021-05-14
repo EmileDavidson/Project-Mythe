@@ -36,4 +36,9 @@ public class SceneController : MonoBehaviour
         {
             SceneManager.LoadScene((int) scene);
         }
+        
+        public void LoadScene(int scene)
+        {
+            SceneManager.LoadScene((int) scene);
+        }
 }
