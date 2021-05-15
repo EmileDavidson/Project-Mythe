@@ -15,8 +15,6 @@ public class PlayerRotation : MonoBehaviour
         //prob not gonna use the Y direction for player.
         _mouseX = Input.GetAxis("Mouse X");
         _mouseY = Input.GetAxis("Mouse Y");
-        
-        print(_mouseX);
 
         transform.eulerAngles += new Vector3(0, _mouseX * rotateSpeed, 0);
     }

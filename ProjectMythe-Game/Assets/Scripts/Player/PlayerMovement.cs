@@ -1,47 +1,52 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private float moveHor;
-    private float moveVer;
-    
-    private bool _canMove = true;
-    private bool _canRotate = true;
-    
-    //move an gravity speed
+    [Header("Movement")]
     [SerializeField] private float speed = 6f;
-    [SerializeField] private float gravity = 20f;
-
-    //controller movement
     [SerializeField] private Vector3 moveDirection = Vector3.zero;
-    [SerializeField] private CharacterController controller;
+    private bool _canMove = true;
+    
+    [Header("Sprinting")]
+    [SerializeField] private float sprintAmplifier = 2;
+    [SerializeField] private bool _canSprint = true;
+    private bool _isSprinting = false;
 
-    //jumps
+    [Header("Gravity")]
+    [SerializeField] private float gravity = 20f;
+    
+    [Header("Jumping")]
     [SerializeField] private float jumpSpeed = 8f;
     [SerializeField] private int maxDoubleJumps = 2;
     private int jumps;
-    
-    //GameObjects
-    [SerializeField] private Camera playerCam;
+
+    [Header("Connections")]
+    [SerializeField] private CharacterController controller;
     [SerializeField] private Animator anim;
 
-    // Update is called once per frame
+    //background variables
+    private float _moveHor;
+    private float _moveVer;
+
     private void Update()
     {
-        moveHor = Input.GetAxis("Horizontal");
-        moveVer = Input.GetAxis("Vertical");
+        _moveHor = Input.GetAxis("Horizontal");
+        _moveVer = Input.GetAxis("Vertical"); 
         Move();
     }
 
     public void Move()
     {
         if (_canMove == false) return;
+        if(!_isSprinting) _isSprinting = Input.GetKeyDown(KeyCode.LeftControl);
+        
         if (controller.isGrounded)
         {
-            moveDirection = new Vector3(moveHor / 2, 0, moveVer);
+            moveDirection = new Vector3((_moveHor / 2) * (_isSprinting ?  sprintAmplifier : 1), 0, _moveVer * (_isSprinting ? sprintAmplifier : 1));
             moveDirection = transform.TransformDirection(moveDirection);
             moveDirection *= speed;
             if (Input.GetKey(KeyCode.Space))
@@ -50,9 +55,9 @@ public class PlayerMovement : MonoBehaviour
             }
             jumps = 0;
         } 
-        else 
+        else
         {
-            moveDirection = new Vector3(moveHor / 2, moveDirection.y, moveVer);
+            moveDirection = new Vector3((_moveHor / 2) * (_isSprinting ? sprintAmplifier : 1), moveDirection.y, _moveVer * (_isSprinting ? sprintAmplifier : 1));
             moveDirection = transform.TransformDirection(moveDirection);
             moveDirection.x *= speed;
             moveDirection.z *= speed;
@@ -62,7 +67,11 @@ public class PlayerMovement : MonoBehaviour
                 jumps++;
             }
         }
+        
+        if (_moveVer == 0 && _moveHor == 0) _isSprinting = false;
         moveDirection.y -= gravity * Time.deltaTime;
         controller.Move(moveDirection * Time.deltaTime);
     }
+
+
 }
