@@ -36,7 +36,7 @@ Platform:
 | Asset planning (pdf)                  | [AssetPlanning]
 |<img width=500/>|<img width=300/>|
 
-   [Backlog]: <https://trello.com/invite/b/EctWb3Y2/992149bb63285d8878eff56793692081/mythe> <!-- fixed -->
+   [Backlog]: <https://trello.com/invite/b/EctWb3Y2/992149bb63285d8878eff56793692081/mythe>
    [Logboek]: <https://github.com/BerendWeij/agp_inlever_template/blob/master/producten/logboek.pdf>
    [GameDesignDoc]: <https://github.com/BerendWeij/agp_inlever_template/blob/master/producten/GameDesignDoc.pdf>
    [RetrospectiveVerslagen]: <https://github.com/BerendWeij/agp_inlever_template/blob/master/producten/RetrospectiveVerslagen.pdf>
