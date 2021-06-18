@@ -5,6 +5,10 @@ Platform:
 [PC]
 
 ### Korte omschrijving van de game
+Wij hebben de mythe Momotaro gekozen. hierbij is ons idee dat momotaro, fazant en de aap 
+een de zelfde persoon is (je kan tussen deze character switchen) waarbij je door horders aan demonen moet gaan. 
+soms een puzzle moet oplossen en op het einde een "boss" moet verslaan. dit is herhaalbaar aangezien we willen werken met levels
+ieder level kan andere enimies hebben en een andere boss. (NOTE voor het project gaan we maar 1 level en een enemy maken) 
 ...
 
 ---
