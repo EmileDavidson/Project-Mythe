@@ -30,14 +30,14 @@ Platform:
 | Product  | Link |
 | ------ |  ------ |
 | Sprint retrospective verslagen (pdf)  | [RetrospectiveVerslagen]
-| Sprint review verslagen (pdf)         | [ReviewVerslagen]
+| Sprint review verslagen (pdf)         | Niet gestuurd. 
 | Link naar online speelbaar prototype  | [Prototype]
 | Logboek (pdf)                         | [Logboek]
 | Asset planning (pdf)                  | [AssetPlanning]
 |<img width=500/>|<img width=300/>|
 
    [Backlog]: <https://trello.com/invite/b/EctWb3Y2/992149bb63285d8878eff56793692081/mythe>
-   [Logboek]: <https://github.com/BerendWeij/agp_inlever_template/blob/master/producten/logboek.pdf>
+   [Logboek]: <https://github.com/EmileDavidson/agp_inlever_template/blob/master/producten/Logboek.pdf>
    [GameDesignDoc]: <https://github.com/BerendWeij/agp_inlever_template/blob/master/producten/GameDesignDoc.pdf>
    [RetrospectiveVerslagen]: <https://github.com/BerendWeij/agp_inlever_template/blob/master/producten/RetrospectiveVerslagen.pdf>
    [ReviewVerslagen]: <https://github.com/BerendWeij/agp_inlever_template/blob/master/producten/ReviewVerslagen.pdf>
