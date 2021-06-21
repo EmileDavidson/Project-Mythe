@@ -42,7 +42,7 @@ ieder level kan andere enimies hebben en een andere boss. (NOTE voor het project
 
    [Backlog]: <https://trello.com/b/EctWb3Y2/mythe>
    [Logboek]: <https://github.com/EmileDavidson/agp_inlever_template/blob/master/producten/Logboek.pdf>
-   [GameDesignDoc]: <https://github.com/EmileDavidson/agp_inlever_template/blob/master/producten/Game_Design_Document_Mythe_1%20(1).pdf>
+   [GameDesignDoc]: <https://github.com/EmileDavidson/agp_inlever_template/blob/master/producten/Game_Design_Document_Mythe_2.pdf>
    [RetrospectiveVerslagen]: <https://github.com/BerendWeij/agp_inlever_template/blob/master/producten/RetrospectiveVerslagen.pdf>
    [ReviewVerslagen]: <https://github.com/BerendWeij/agp_inlever_template/blob/master/producten/ReviewVerslagen.pdf>
    [Prototype]: <https://drive.google.com/drive/folders/1ScrWLgWZ1a2eEATHqsjvaEZo_WFrzJgr?usp=sharing>
