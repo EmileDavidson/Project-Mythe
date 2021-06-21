@@ -40,7 +40,7 @@ ieder level kan andere enimies hebben en een andere boss. (NOTE voor het project
 | Asset planning (pdf)                  | [AssetPlanning]
 |<img width=500/>|<img width=300/>|
 
-   [Backlog]: <https://trello.com/invite/b/EctWb3Y2/992149bb63285d8878eff56793692081/mythe>
+   [Backlog]: <https://trello.com/b/EctWb3Y2/mythe>
    [Logboek]: <https://github.com/EmileDavidson/agp_inlever_template/blob/master/producten/Logboek.pdf>
    [GameDesignDoc]: <https://github.com/EmileDavidson/agp_inlever_template/blob/master/producten/Game_Design_Document_Mythe_1%20(1).pdf>
    [RetrospectiveVerslagen]: <https://github.com/BerendWeij/agp_inlever_template/blob/master/producten/RetrospectiveVerslagen.pdf>
